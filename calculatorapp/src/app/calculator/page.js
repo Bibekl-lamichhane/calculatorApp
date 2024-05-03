@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import './calculator.css';
 
 const Calculator = () => {
   const [display, setDisplay] = useState('');
@@ -20,9 +21,9 @@ const Calculator = () => {
 
   return (
     < div className='outer-container'>
-    <div className=" inner-container bg-black p-8 rounded-2xl">
+    <div className=" inner-container  bg-black p-8 w-400 h-680 rounded-2xl">
       {/* output start */}
-      <div className="bg-black text-white text-8xl m-20" >{display || '0'}</div>
+      <div className="output  bg-black text-white text-4xl " >{display || '0'}</div>
       {/* output end */}
 
       {/* calculate button */}
@@ -75,7 +76,7 @@ const Calculator = () => {
         <button onClick={() => handleClick('+')} className="px-6 py-3 rounded-full border-medium text-3xl text-white   bg-iorange m-10px p-8px">
           +
         </button>
-        <button onClick={() => handleClick('0')} className="px-6 py-3 rounded-full border-medium text-3xl text-white   bg-igrey m-10px p-8px">
+        <button onClick={() => handleClick('0')} className="col-span-2 px-6 py-3 rounded-full border-medium text-3xl text-white   bg-igrey m-10px p-8px">
           0
         </button>
         <button onClick={() => handleClick('.')} className=" px-6 py-3 rounded-full border-medium text-3xl text-white  bg-igrey  m-10px p-8px">

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.outer-container {
+  width: 70vw; /* 80% of the viewport width */
+  height: 100vh; /* 80% of the viewport height */
+  margin: auto; /* Center the container horizontally */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the inner content horizontally */
+  align-items: center; /* Center the inner content vertically */
+  background-color: #1f1e1e; /* Example background color */
+}
+
+.inner-content {
+  /* Styles for inner content */
+}

@@ -1,0 +1,42 @@
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .inner-container {
+    width: 400px; /* Adjust the width of the calculator container */
+    height: 680px; /* Adjust the height of the calculator container */
+  }
+  
+  .output {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(245, 240, 240);
+    font-size: 10xl;
+    margin-left:10px;
+    margin-bottom:20px;
+    margin-top:160px;
+    max-width: 100%; /* Limit the width of the display */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Display an ellipsis (...) when text overflows */
+    white-space: nowrap; /* Prevent wrapping of text */
+  }
+  
+  .button {
+    padding: 8px;
+    border-radius: 50%;
+    border: medium;
+    font-size: 3xl;
+    background-color: #ffffff;
+    color: black;
+    margin: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .inner-container {
+      width: 90%; /* Adjust the width of the calculator container for smaller screens */
+    }
+  }
+  
