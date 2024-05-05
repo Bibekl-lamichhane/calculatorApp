@@ -6,8 +6,14 @@
   }
   
   .inner-container {
-    width: 400px; /* Adjust the width of the calculator container */
-    height: 680px; /* Adjust the height of the calculator container */
+    width: 330px; /* Adjust the width of the calculator container */
+    height: 700px; /* Adjust the height of the calculator container */
+    position:relative;
+    border-radius:40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px;
+
+   
   }
   
   .output {
@@ -20,15 +26,15 @@
     margin-top:160px;
     max-width: 100%; /* Limit the width of the display */
     overflow: hidden; /* Hide overflowing content */
-    text-overflow: ellipsis; /* Display an ellipsis (...) when text overflows */
+    text-overflow: ellipsis; /* Display an ellipsis (......) when the text overflows */
     white-space: nowrap; /* Prevent wrapping of text */
   }
   
   .button {
-    padding: 8px;
+    padding: 4px;
     border-radius: 50%;
     border: medium;
-    font-size: 3xl;
+    font-size: 1xl;
     background-color: #ffffff;
     color: black;
     margin: 10px;
@@ -40,3 +46,22 @@
     }
   }
   
+  .iphone {
+    margin:auto;
+    border:10px solid black;
+    border-radius:40px;
+    width: 340px; 
+    height: 720px;
+    position:relative;
+    box-shadow:0px 20px 15px #33333335;
+  }
+  .notch {
+    z-index:50;
+    top:0;
+    left:62px;
+    position:absolute;
+    background:#000000;
+    width:200px;
+    height:30px;
+    border-radius:0px 0px 20px 20px;
+  }
